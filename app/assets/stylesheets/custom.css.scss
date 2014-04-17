@@ -2,7 +2,7 @@
 
 /* mixins, variables, etc. */
 
-$grayMediumLight: #eaeaea;
+$redBordo: #D50E2F;
 
 /* universal */
 
@@ -12,6 +12,12 @@ html {
 
 body {
   padding-top: 60px;
+  background-color:lightyellow;
+}
+
+table img {
+  width:200px;
+  height: 300px;
 }
 
 section {
@@ -48,7 +54,16 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $grayLight;
+  color: $gray;
+}
+
+h3 {
+  font-size: 1,5em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: $red;
 }
 
 p {
@@ -63,14 +78,14 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: red;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    color: red;
     text-decoration: none;
   }
 }
@@ -80,12 +95,12 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
+  border-top: 1px solid $redBordo;
+  color: $redBordo;
   a {
-    color: $gray;
+    color: $redBordo;
     &:hover {
-      color: $grayDarker;
+      color: $redBordo;
     }
   }
   small {
