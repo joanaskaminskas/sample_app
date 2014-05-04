@@ -9,7 +9,7 @@ describe "Static pages" do
 
     it { should have_content('Sample App') }
     it { should have_title(full_title('')) }
-    it { should_not have_title('| Pirmas') }
+    it { should_not have_title(' Pirmas') }
   end
 
   describe "Help page" do
@@ -31,5 +31,12 @@ describe "Static pages" do
 
     it { should have_content('Kontaktai') }
     it { should have_title(full_title('Kontaktai')) }
+  end
+
+  describe "Susisiekite" do
+    before { visit susisiekite_path }
+
+    it { should have_content('Susisiekite') }
+    it { should have_title(full_title('Susisiekite')) }
   end
 end

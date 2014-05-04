@@ -7,6 +7,7 @@
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
+
 <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;
 key=ABQIAAAAuPsJpk3MBtDpJ4G8cqBnjRRaGTYH6UMl8mADNa0YKuWNNa8VNxQCzVBXTx2DYyXGsTOxpWhvIG7Djw"
  type="text/javascript"></script>
@@ -14,7 +15,7 @@ key=ABQIAAAAuPsJpk3MBtDpJ4G8cqBnjRRaGTYH6UMl8mADNa0YKuWNNa8VNxQCzVBXTx2DYyXGsTOx
   </head>
   <body>
     <%= render 'layouts/header' %>
-    <div class="container">
+        <div class="container">
       <%= yield %>
       <%= render 'layouts/footer' %>
     </div>

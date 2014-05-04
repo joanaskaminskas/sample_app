@@ -2,7 +2,7 @@
 
 /* mixins, variables, etc. */
 
-$redBordo: #D50E2F;
+$blue: #2674EA;
 
 /* universal */
 
@@ -16,7 +16,7 @@ body {
 }
 
 table img {
-  width:200px;
+  width:500px;
   height: 300px;
 }
 
@@ -29,9 +29,10 @@ textarea {
 }
 
 .center {
-  text-align: center;
+  text-align: left;
   h1 {
     margin-bottom: 10px;
+    font-size: 2em;
   }
 }
 
@@ -45,30 +46,32 @@ h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
 }
 
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
   font-weight: normal;
+  font-family: serif;
   color: $gray;
 }
 
 h3 {
   font-size: 1,5em;
   letter-spacing: -1px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: left;
   font-weight: normal;
-  color: $red;
+  color: $gray;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  text-align: left;
 }
 
 
@@ -78,14 +81,14 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: red;
+  color: blue;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: red;
+    color: blue;
     text-decoration: none;
   }
 }
@@ -95,12 +98,12 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $redBordo;
-  color: $redBordo;
+  border-top: 1px solid $blue;
+  color: $blue;
   a {
-    color: $redBordo;
+    color: $blue;
     &:hover {
-      color: $redBordo;
+      color: $blue;
     }
   }
   small {
