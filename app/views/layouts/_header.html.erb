@@ -1,8 +1,11 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="navbar-inner">
-    <div class="container">
-    <%= link_to "UAB Samarina", root_path, id: "logo" %>
-      <nav>
+  <div class="navbar-inner" >
+  <table class="style2" float="left"> <tr>
+<td>
+   <%= link_to (image_tag("logo.bmp", :alt => "„Samarina“")), root_path %>
+</td>
+</tr>
+</table>
         <ul class="nav pull-right">
           <li><%= link_to "Titulinis",  root_path %></li>
           <li><%= link_to "Paslaugos",  help_path %></li>
